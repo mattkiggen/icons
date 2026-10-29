@@ -1,0 +1,39 @@
+<script setup lang="ts">
+interface Props {
+  title?: string;
+}
+const props = withDefaults(defineProps<Props>(), {
+  title: "files",
+});
+</script>
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <title>{{ title }}</title>
+    <g fill="#212121">
+      <path
+        d="M5.25,13.25h-1c-1.105,0-2-.895-2-2V3.25c0-1.105,.895-2,2-2h5c1.105,0,2,.895,2,2v1.052"
+        fill="none"
+        stroke="#212121"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M5.25,14.25V6.25c0-1.105,.895-2,2-2h4.086c.265,0,.52,.105,.707,.293l2.914,2.914c.188,.188,.293,.442,.293,.707v6.086c0,1.105-.895,2-2,2H7.25c-1.105,0-2-.895-2-2Z"
+        fill="none"
+        stroke="#212121"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <path
+        d="M15.25,8.25h-3c-.552,0-1-.448-1-1v-3"
+        fill="none"
+        stroke="#212121"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+    </g>
+  </svg>
+</template>
