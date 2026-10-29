@@ -1,0 +1,31 @@
+<script setup lang="ts">
+interface Props {
+  title?: string;
+}
+const props = withDefaults(defineProps<Props>(), {
+  title: "undo 3",
+});
+</script>
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <title>{{ title }}</title>
+    <g fill="#212121">
+      <path
+        d="m3.4335,12.7902c1.2141,1.7867,3.2633,2.9598,5.5862,2.9598,3.7279,0,6.75-3.0221,6.75-6.75s-3.0221-6.75-6.75-6.75c-2.7957,0-5.1939,1.6996-6.2187,4.1212"
+        fill="none"
+        stroke="#212121"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></path>
+      <polyline
+        points="6.3707 6.215 2.538 6.75 2.0069 2.9168"
+        fill="none"
+        stroke="#212121"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      ></polyline>
+    </g>
+  </svg>
+</template>
